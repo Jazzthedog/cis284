@@ -4,9 +4,10 @@
   <meta charset="utf-8" />
   <title>CIS284</title>
 
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'screen', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'print', media: 'print', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+  <%= csrf_meta_tags %> <!-- Rails convention for security -->
   <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
 </head>
